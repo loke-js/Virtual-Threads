@@ -54,7 +54,7 @@ const Customizer = () => {
       // call out backend to generate an AI image!
       setGeneratingImg(true);
       const response = await axios.post(
-        "http://localhost:8080/api/v1/dalle",
+        "https://virtual-threads-backend.onrender.com/api/v1/dalle",
         {
           prompt: prompt,
         },
